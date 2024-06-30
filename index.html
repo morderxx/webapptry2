@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор Кошелька</title>
+    <script defer src="phantom.js"></script>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #111;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .wallets {
+            display: block; /* Или inline-block */
+            text-align: center; /* Центрируем текст под изображением */
+            margin-bottom: 20px;
+        }
+
+        .wallets img {
+            width: 80px;
+            height: 80px;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .wallets img.selected {
+            border: 2px solid gold;
+        }
+
+        .wallet-label {
+            text-align: center;
+            margin-top: 5px; /* Отступ сверху */
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 2px solid gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Выберите ваш кошелек</h1>
+        <div class="wallets">
+            <img src="Phantom.png" alt="Phantom" id="Phantom">
+            <div class="wallet-label">Phantom</div>
+        </div>
+        <button id="nextButton">Далее</button>
+        <div id="result"></div>
+    </div>
+</body>
+
+</html>
